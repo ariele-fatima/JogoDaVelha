@@ -1,9 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     let squares = document.querySelectorAll(".square");
+    let btnNewGame = document.getElementById("newGame");
 
     squares.forEach((square) => {
         square.addEventListener('click', handleClick);
     });
+
+    btnNewGame.addEventListener('click', restartGame);
 });
 
 function handleClick(event) {
@@ -14,10 +18,12 @@ function handleClick(event) {
     if (handleMove(position)) {
         setTimeout(() => {
             alert("O Jogo Acabou - O Vencedor foi " + playerTime);
-
         }, 10)
+    }else if(isDraw()){
+        setTimeout(() => {
+            alert("O Jogo Empatou");
+        }, 10);
     };
-
     updateSquare(position);
 }
 
@@ -26,7 +32,6 @@ function updateSquare(position){
     let symbol = board[position];
     square.innerHTML = `<div class='${symbol}'>`
 }
-
 
 function updateSquares(){    
     let squares = document.querySelectorAll(".square");
@@ -39,4 +44,9 @@ function updateSquares(){
             square.innerHTML = '';
         }
     })
+}
+
+function restartGame(){
+    updateSquares();
+    initialVariables();
 }

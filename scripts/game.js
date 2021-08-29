@@ -26,7 +26,7 @@ function handleMove(position) {
 
         gameOver = isWin();
 
-        if(gameOver == false){
+        if (gameOver == false) {
             playerTime = (playerTime == 0) ? 1 : 0;
         }
     }
@@ -52,4 +52,28 @@ function isWin() {
     }
 
     return false;
+}
+
+
+function isDraw() {
+
+    var spaceFull = 0;
+
+    for (let i = 0; i < board.length; i++) {
+        if (board[i] != '') {
+            spaceFull++;
+        }
+    }
+
+    if (board.length == spaceFull && gameOver == false) {
+        return true;
+    }
+
+    return false;
+}
+
+function initialVariables(){
+    board = ['', '', '', '', '', '', '', '', '' ];
+    playerTime = 0;
+    gameOver = false;
 }

@@ -13,6 +13,8 @@ let winStates = [
     [0, 4, 8],
     [2, 4, 6]
 ];
+let winsPlayer0 = 0;
+let winsPlayer1 = 0;
 
 
 function handleMove(position) {
@@ -76,4 +78,13 @@ function initialVariables(){
     board = ['', '', '', '', '', '', '', '', '' ];
     playerTime = 0;
     gameOver = false;
+}
+
+function countVictors(playerTime){
+    playerTime == 0 ? winsPlayer0 ++ : winsPlayer1 ++;    
+}
+
+function initialVariablesScoreboard(){
+    winsPlayer0 = 0;
+    winsPlayer1 = 0;
 }

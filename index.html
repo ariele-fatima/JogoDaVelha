@@ -26,8 +26,23 @@
             <div id="8" class="square"></div>
         </div>
     </div>
-
-    <button id="newGame">Novo Jogo</button>
+    <div class="buttonsContainer">
+        <button id="newGame">Novo Jogo</button>    
+        <button id="resetScoreboard">Resetar Placar</button>
+    </div>
+    <div class="scoreboardContainer">
+        <h2>Placar</h2>
+        <div class="scoreboardContent">
+            <div class="scoreboardResult">
+                <div class="player1"></div> 
+                <div id="valuePlayer0"> : 0</div>
+            </div>
+            <div class="scoreboardResult">
+                <div class="player2"></div> 
+                <div id="valuePlayer1"> : 0</div>
+            </div>
+        </div>
+    </div>
 
     <script src="./scripts/game.js"></script>
     <script src="./scripts/interface.js"></script>

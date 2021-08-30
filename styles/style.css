@@ -1,87 +1,110 @@
-body{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+*{
+    font-family: 'Cabin Sketch', cursive;
+}
+
+h1{
+    font-size: 50px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+body {
+  text-align: center;
+  background-image: url("../images/blackboard.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.stage{
+    display: flex;
+    justify-content: center;    
+}
+
+.stageContent {
+    display: grid;
+    width: 320px;
+    height: 320px;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    overflow: auto;  
+}
+
+.stageContent div {
+  outline: 2px solid white;
+}
+
+.stageContent div:last-child {
+  grid-area: 3/3;
 }
 
 .square{
-    width: 100px;
-    height: 100px;
-    background-color: beige;
-    border: 1px solid gray;
-    display: inline-block
-}
-
-.o{
-    position: relative;
-}
-
-.o:after{
-    position: absolute;
-    content: "\1F354";
-    font-size: 50px;
-    line-height: 100px;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.x{
-    position: relative;
-}
-
-.x:after{
-    position: absolute;
-    content: "\1F355";
-    font-size: 50px;
-    line-height: 100px;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-button{
-    font-size: 18px;
-    padding: 5px;
-    border: 1px solid gray;
-    border-radius: 5px;
-}
-
-.buttonsContainer{
-    width: 315px;
-    margin: 10px auto;
-    display: flex;
-    justify-content: space-around;
-}
-
-.scoreboardContainer{
-    border: 1px solid black;    
-    width: 315px;
-    margin: 10px auto;
-    border-radius: 10px;
-}
-
-.scoreboardContent{
-    display: flex;
-    justify-content: space-around;
-    height: 50px;
-    
-}
-
-.scoreboardResult{
-    font-size: 35px;
     display: flex;
     align-items: center;
-    padding-bottom: 10px;
+    justify-content: center;
 }
 
-.player1::after{
-    content: "\1F354";    
+.square div{
+    outline: none;
 }
 
-.player2::after{
-    content: "\1F355";    
+.o:after {
+    content: "X";
+    font-size: 70px;
 }
 
+.x:after {
+    content: "O";
+    font-size: 70px;
+}
 
+button {
+  font-size: 26px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.buttonsContainer {
+  width: 315px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.scoreboardContainer {
+  border: 1px dashed white;
+  width: 315px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.scoreboardContainer h2{
+    font-size: 40px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.scoreboardContent {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+}
+
+.scoreboardResult {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.player1::after {
+  content: "X";
+}
+
+.player2::after {
+  content: "O";
+}

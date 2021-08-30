@@ -21,7 +21,7 @@ function handleClick(event) {
     if (handleMove(position)) {
 
         setTimeout(() => {
-            alert("O Jogo Acabou - O Vencedor foi " + playerTime);
+            alert("O Jogo Acabou - O Vencedor foi " +  playerName(playerTime));
         }, 10);
 
         updateScoreboard(playerTime);
@@ -90,5 +90,9 @@ function cleanScoreboard(){
 function resetScoreboard(){
     initialVariablesScoreboard();
     cleanScoreboard();
+}
+
+function playerName(playerTime){
+    return (playerTime == 0) ? "X" : "0";
 }
 

@@ -22,16 +22,16 @@ function handleClick(event) {
 
         setTimeout(() => {
             alert("O Jogo Acabou - O Vencedor foi " +  playerName(playerTime));
+            updateScoreboard(playerTime);
+            restartGame();
         }, 10);
-
-        updateScoreboard(playerTime);
 
     } else if (isDraw()) {
 
         setTimeout(() => {
             alert("O Jogo Empatou");
+            restartGame();
         }, 10);
-
     };
     
     updateSquare(position);

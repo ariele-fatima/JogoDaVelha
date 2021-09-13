@@ -8,31 +8,24 @@
 
 ## Tópicos 
 
-:small_blue_diamond: [Sobre](#sobre)
-
-:small_blue_diamond: [Demostração da Aplicação](#demostração-da-aplicação)
-
-:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
-
-:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação)
-
-:small_blue_diamond: [Tecnologias](#tecnologias)
-
-:small_blue_diamond: [Funcionalidades](#funcionalidades)
-
-:small_blue_diamond: [Licença](#licença)
-
-:small_blue_diamond: [Autora](#autora)
+* [Sobre o projeto](#-sobre-o-projeto)
+* [Demostração da Aplicação](#-demostração-da-aplicação)
+* [Como rodar a aplicação](#-como-rodar-a-aplicação)
+  * [Pré-requisitos](#pré-requisitos)
+  * [Rodando a aplicação web](#rodando-a-aplicação-web)
+* [Tecnologias](#-tecnologias)
+* [Funcionalidades](#-funcionalidades)
+* [Licença](#-licença)
+* [Autora](#-autora)
 
 
-
-## Sobre
+## 💻 Sobre o projeto
 
 
 O projeto é inspirado no clássico jogo da velha e foi feito no intuito de aplicar os conhecimentos adquiridos na linguagem Javascript.
 
 
-## Demostração da Aplicação
+## 🎨 Demostração da Aplicação
 
 <p align="center">
   <img alt="JogoDaVelha" title="#JogoDaVelha" src="./images/demoJogo.png" />
@@ -40,11 +33,13 @@ O projeto é inspirado no clássico jogo da velha e foi feito no intuito de apli
   <a align="center" href="https://ariele-fatima.github.io/JogoDaVelha/">Acesse a aplicação clicando aqui</a>
 </p>
 
-## Pré-requisitos
+
+## 🚀 Como rodar a aplicação
+
+### Pré-requisitos
 Não há necessidade de dependências ou libs para rodar a aplicação.
 
-## Como rodar a aplicação
-
+### Rodando a aplicação web
 No terminal, clone o projeto: 
 
 ```
@@ -54,15 +49,14 @@ git clone https://github.com/ariele-fatima/JogoDaVelha.git
 Duplo clique no arquivo index.html
 
 
-## Tecnologias
+## 🛠 Tecnologias
 
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 
-## Funcionalidades
-
+## ⚙ Funcionalidades
 
 :heavy_check_mark: Alerta de vitória ou empate
 
@@ -73,11 +67,11 @@ Duplo clique no arquivo index.html
 :heavy_check_mark: Botão para reiniciar placar
 
 
-## Licença
+## 📝 Licença
 
 Esse repositório está licenciado pela **MIT LICENSE**. Para mais informações detalhadas, leia o arquivo [LICENSE](./LICENSE) contido nesse repositório.
 
-## Autora
+## 🦸 Autora
 
 Desenvolvido ❤️ por Ariele Fatima das Dores
 

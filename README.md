@@ -5,16 +5,25 @@
 
 > Status do Projeto: :heavy_check_mark: Concluído
 
-<p align="center">
- <a href="#sobre">Sobre</a> •
- <a href="#demostração-da-aplicação">Demostração da Aplicação</a> • 
- <a href="#pré-requisitos">Pré-requisitos</a> • 
- <a href="#como-rodar-a-aplicação">Como rodar a aplicação</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
- <a href="#funcionalidades">Funcionalidades</a> • 
- <a href="#licença">Licença</a> • 
- <a href="#autora">Autora</a>
-</p>
+
+## Tópicos 
+
+:small_blue_diamond: [Sobre](#sobre)
+
+:small_blue_diamond: [Demostração da Aplicação](#demostração-da-aplicação)
+
+:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
+
+:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação)
+
+:small_blue_diamond: [Tecnologias](#tecnologias)
+
+:small_blue_diamond: [Funcionalidades](#funcionalidades)
+
+:small_blue_diamond: [Licença](#licença)
+
+:small_blue_diamond: [Autora](#autora)
+
 
 
 ## Sobre

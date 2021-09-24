@@ -20,18 +20,19 @@ function handleClick(event) {
 
     if (handleMove(position)) {
 
+        winnerLine(winnerArrayPosition);
+        updateScoreboard(playerTime);        
         setTimeout(() => {
-            alert("O Jogo Acabou - O Vencedor foi " +  playerName(playerTime));
-            updateScoreboard(playerTime);
-            restartGame();
-        }, 10);
-
+            gameOverModal(true);
+        }, 500);
+        
     } else if (isDraw()) {
 
+        updateScoreboard(playerTime);
         setTimeout(() => {
-            alert("O Jogo Empatou");
-            restartGame();
-        }, 10);
+            gameOverModal(false);
+        }, 500);
+
     };
     
     updateSquare(position);
@@ -89,6 +90,8 @@ function gameOverModal(win) {
 }
 
 function restartGame() {
+    let gameOverModal = document.getElementById("gameOverConteiner");
+    gameOverModal.style.display = 'none';
     cleanSquares();
     initialVariables();
 }

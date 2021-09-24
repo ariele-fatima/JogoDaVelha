@@ -28,7 +28,6 @@ function handleClick(event) {
         
     } else if (isDraw()) {
 
-        updateScoreboard(playerTime);
         setTimeout(() => {
             gameOverModal(false);
         }, 500);

@@ -74,6 +74,20 @@ function cleanSquares() {
     })
 }
 
+function gameOverModal(win) {
+
+    let gameOverMensage = document.getElementById("gameOver");
+    let gameOverModal = document.getElementById("gameOverConteiner");
+    
+    if(win){
+        gameOverMensage.innerHTML = "O Jogo Acabou - O Vencedor foi " +  playerName(playerTime);
+    }else {
+        gameOverMensage.innerHTML = "O Jogo Empatou";
+    }
+
+    gameOverModal.style.display = 'flex';
+}
+
 function restartGame() {
     cleanSquares();
     initialVariables();

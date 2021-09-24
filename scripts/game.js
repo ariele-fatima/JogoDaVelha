@@ -15,6 +15,8 @@ let winStates = [
 ];
 let winsPlayer0 = 0;
 let winsPlayer1 = 0;
+let winnerArrayPosition;
+let winnerSequence;
 
 
 function handleMove(position) {
@@ -49,13 +51,14 @@ function isWin() {
         if (board[position1] == board[position2] &&
             board[position1] == board[position3] &&
             board[position1] != '') {
+            winnerSequence = winStates[i];
+            winnerArrayPosition = i;
             return true;
         }
     }
 
     return false;
 }
-
 
 function isDraw() {
 

@@ -20,18 +20,18 @@ function handleClick(event) {
 
     if (handleMove(position)) {
 
+        winnerLine(winnerArrayPosition);
+        updateScoreboard(playerTime);        
         setTimeout(() => {
-            alert("O Jogo Acabou - O Vencedor foi " +  playerName(playerTime));
-            updateScoreboard(playerTime);
-            restartGame();
-        }, 10);
-
+            gameOverModal(true);
+        }, 500);
+        
     } else if (isDraw()) {
 
         setTimeout(() => {
-            alert("O Jogo Empatou");
-            restartGame();
-        }, 10);
+            gameOverModal(false);
+        }, 500);
+
     };
     
     updateSquare(position);
@@ -43,6 +43,21 @@ function updateSquare(position) {
     let symbol = board[position];
 
     square.innerHTML = `<div class='${symbol}'>`
+}
+
+function winnerLine(sequence){
+    let winSquares = document.getElementById(winnerSequence[1]);
+
+    if(sequence == 0 || sequence == 1 || sequence == 2){
+        winSquares.innerHTML += "<div class='winner-horizontal-line'></div>";
+    } else if (sequence == 3 || sequence == 4 || sequence == 5) {
+        winSquares.innerHTML += "<div class='winner-vertical-line'></div>";
+    } else if (sequence == 6) {
+        winSquares.innerHTML += "<div class='winner-diagonal-line'></div>";
+    } else {
+        winSquares.innerHTML += "<div class='winner-diagonal-line'></div>";
+        document.querySelector(".winner-diagonal-line").style.transform = ("rotate(45deg)")        
+    }
 }
 
 function cleanSquares() {
@@ -59,9 +74,29 @@ function cleanSquares() {
     })
 }
 
+function gameOverModal(win) {
+
+    let gameOverMensage = document.getElementById("gameOver");
+    let gameOverModal = document.getElementById("gameOverConteiner");
+    
+    if(win){
+        gameOverMensage.innerHTML = "O Jogo Acabou - O Vencedor foi " +  playerName(playerTime);
+    }else {
+        gameOverMensage.innerHTML = "O Jogo Empatou";
+    }
+
+    gameOverModal.style.display = 'flex';
+}
+
 function restartGame() {
+    hideFameOverModal();
     cleanSquares();
     initialVariables();
+}
+
+function hideFameOverModal(){
+    let gameOverModal = document.getElementById("gameOverConteiner");
+    gameOverModal.style.display = 'none';
 }
 
 function updateScoreboard(playerTime) {

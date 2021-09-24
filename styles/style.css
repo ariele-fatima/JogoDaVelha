@@ -108,3 +108,55 @@ button {
 .player2::after {
   content: "O";
 }
+
+
+.winner-horizontal-line{
+  background-color: white;
+  width: 320px;
+  height: 5px;
+
+  position: absolute;
+  z-index: 1;
+  
+  left: calc(100vw/2 - 160px);
+
+  animation: growX .5s;
+}
+
+@keyframes growX {
+  from{width: 0%};
+}
+
+
+.winner-vertical-line{
+  background-color: white;
+  width: 5px;
+  height: 320px;
+
+  position: absolute;
+  z-index: 1;
+  
+  top: 87px;
+
+  animation: growY .5s;
+}
+
+@keyframes growY {
+  from{height: 0%};
+}
+
+.winner-diagonal-line{
+  background-color: white;
+  width: 5px;
+  height: 450px;
+
+  position: absolute;
+  z-index: 1;
+
+  transform: rotate(-45deg);
+  animation: growDiagonal .5s ;
+}
+
+@keyframes growDiagonal {
+  from {height: 0%};
+}

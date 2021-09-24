@@ -45,6 +45,21 @@ function updateSquare(position) {
     square.innerHTML = `<div class='${symbol}'>`
 }
 
+function winnerLine(sequence){
+    let winSquares = document.getElementById(winnerSequence[1]);
+
+    if(sequence == 0 || sequence == 1 || sequence == 2){
+        winSquares.innerHTML += "<div class='winner-horizontal-line'></div>";
+    } else if (sequence == 3 || sequence == 4 || sequence == 5) {
+        winSquares.innerHTML += "<div class='winner-vertical-line'></div>";
+    } else if (sequence == 6) {
+        winSquares.innerHTML += "<div class='winner-diagonal-line'></div>";
+    } else {
+        winSquares.innerHTML += "<div class='winner-diagonal-line'></div>";
+        document.querySelector(".winner-diagonal-line").style.transform = ("rotate(45deg)")        
+    }
+}
+
 function cleanSquares() {
 
     let squares = document.querySelectorAll(".square");

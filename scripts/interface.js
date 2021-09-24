@@ -89,10 +89,14 @@ function gameOverModal(win) {
 }
 
 function restartGame() {
-    let gameOverModal = document.getElementById("gameOverConteiner");
-    gameOverModal.style.display = 'none';
+    hideFameOverModal();
     cleanSquares();
     initialVariables();
+}
+
+function hideFameOverModal(){
+    let gameOverModal = document.getElementById("gameOverConteiner");
+    gameOverModal.style.display = 'none';
 }
 
 function updateScoreboard(playerTime) {

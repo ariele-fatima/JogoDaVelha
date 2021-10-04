@@ -75,6 +75,6 @@ Esse repositório está licenciado pela **MIT LICENSE**. Para mais informações
 
 Desenvolvido ❤️ por Ariele Fatima das Dores
 
-[![Linkedin Badge](https://img.shields.io/badge/-Ariele-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ariele-fatima-057579191/)](https://www.linkedin.com/in/ariele-fatima-057579191/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ariele-fatima-das-dores-057579191/)](https://www.linkedin.com/in/ariele-fatima-das-dores-057579191/) 
 
 
